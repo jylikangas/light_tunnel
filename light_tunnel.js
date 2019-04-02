@@ -1,6 +1,5 @@
 // COPY PASTE THE CODE INSIDE JS1k 2019 SHIM FROM https://js1k.com/2019-x/rules
 (R=_=>{
-
 	// timer
 	requestAnimationFrame(R),
 	t = t % 300 + .06,
@@ -18,8 +17,8 @@
 	j = 82,
 	z = t / 9 - 23,
 	p = z < 3 ? z : 3,
-	x += o = !x | x > 78 ? -o : o,
-	y += q = !y | y > 200 ? -q : q,
+	x += o = x % 80 ? o : -o,
+	y += q = y % 200 ? q : -q,
 	z > 0 && (c.shadowBlur = 5) &
 		(z > 5 && c.strokeRect(-j / 2 * p, -j * 2 * p, j * p, j * 2.8 * p)) &
 			c.fillRect((x - j / 2) * p, (y - j * 2) * p, 2 * p, 4 * p) &
